@@ -2,7 +2,7 @@ name: HCL AppScan - SAST Scan
 
 on:
   schedule:
-    - cron: "0 1 * * 0" # ----- Sundays at 01:00 UTC
+    - cron: "0 5 * * 0" # ----- Sundays at 05:00 UTC
 
   workflow_dispatch:
 
