@@ -1,0 +1,36 @@
+name: HCL AppScan - SAST Scan
+
+on:
+  schedule:
+    - cron: "0 1 * * 0" # ----- Sundays at 01:00 UTC
+
+  workflow_dispatch:
+
+concurrency:
+  group: hcl-appscan-sast-scan-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    name: Initiate SAST scan in HCL AppScan on Cloud
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          clean: true
+          fetch-depth: 0
+
+      - name: Get Current Date and Time
+        id: formatted-datetime
+        run: echo "dateTimeFormatted=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
+
+      - name: Run AppScan SAST Scan
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1
+        with:
+          asoc_key: ${{ vars.APPSCAN_ON_CLOUD__API_KEY }}
+          asoc_secret: ${{ secrets.APPSCAN_ON_CLOUD__API_SECRET }}
+          application_id: ${{ vars.APPSCAN_ON_CLOUD__APPLICATION_ID }}
+          scan_name: "static--${{ github.event.repository.name }}--${{ steps.formatted-datetime.outputs.dateTimeFormatted }}"
