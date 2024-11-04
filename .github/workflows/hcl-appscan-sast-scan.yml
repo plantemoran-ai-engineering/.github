@@ -28,7 +28,7 @@ jobs:
         run: echo "dateTimeFormatted=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
 
       - name: Run AppScan SAST Scan
-        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.6
         with:
           asoc_key: ${{ vars.APPSCAN_ON_CLOUD__API_KEY }}
           asoc_secret: ${{ secrets.APPSCAN_ON_CLOUD__API_SECRET }}
