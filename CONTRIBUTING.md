@@ -131,8 +131,5 @@ Pull requests serve as the primary mechanism by which contributions are proposed
 
 [gh-md-syntax-guidance]: https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 [gh-suggested-changes]: https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request
-[git]: https://git-scm.com/
 [github-flow-guide]: https://guides.github.com/introduction/flow/
 [topic-branch]: https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches
-[vscode]: https://code.visualstudio.com/
-[developer-workstation-config-docs]: https://plantemoran-appdev.github.io/github-process-docs/workstation-setup/workstation-config/
