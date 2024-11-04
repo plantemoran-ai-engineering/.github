@@ -1,12 +1,4 @@
 {
   "version": "0.2",
-  "words": [
-    "appdev",
-    "backticks",
-    "plante",
-    "plantemoran",
-    "SAST",
-    "styleguide",
-    "vercel"
-  ]
+  "words": ["appdev", "backticks", "plante", "plantemoran", "SAST", "styleguide", "vercel"]
 }
