@@ -10,16 +10,6 @@ Use your best judgment and feel free to propose changes to anything in this repo
 - You can [create an issue](../../../issues/new/choose), but before doing that please read the bullets below and include as many details as possible.
 - Perform a [cursory search](../../../issues) to see if a similar item has already been submitted.
 
-## Recommended setup for contributing
-
-**NOTE:** Always be sure to use **_only_** approved versions from the [Developer Workstation Configuration][developer-workstation-config-docs] guide.
-
-- Install [Git][git] and clone this repository.
-- Install nvm
-- Install (via nvm) node v16.x
-- Install [VS Code][vscode].
-  - Install all recommended VS Code extensions (included in /.vscode/extensions.json).
-
 ## Documentation style guide
 
 - Please reference GitHub's [basic writing and formatting syntax][gh-md-syntax-guidance].

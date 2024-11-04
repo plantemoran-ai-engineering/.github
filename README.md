@@ -10,6 +10,35 @@ These "default" files will be used for any repository owned by the account that 
 
 For more information, please see [Creating a default community health file][gh-creating-default-comm-health-file].
 
+## Getting Started
+
+Ensure you have the following tools installed before getting started.
+
+**NOTE:** Always be sure to use **_only_** approved versions from the [Developer Workstation Configuration][developer-workstation-config-docs] guide.
+
+- Git
+- NVM
+- Node (20.x)
+- VS Code
+  - This includes all recommended VS Code extensions (included in /.vscode/extensions.json)
+- Dependencies
+  - `npm install`
+
+## Scripts
+
+This repository has a set of scripts which apply to all packages.
+
+- `format:check`: run prettier and check if files are properly formatted
+  - e.g. `npm run format:check`
+  - NOTE: this will not change any files; it will notify you if any files need reformatting
+- `format`: format code using prettier
+  - e.g. `npm run format`
+  - NOTE: this will **make changes** to files
+  - NOTE: it is recommended to run this when there are no pending changes on the branch
+    - this way, you can see all changes made by prettier
+- `lint`: lint code (javascript, typescript, markdown, styles, etc.)
+  - e.g. `npm run lint`
+
 ## Issue Templates
 
 This repo contains 2 types of issue templates:
@@ -30,8 +59,13 @@ This repo contains 2 types of issue templates:
 
 This special repository also contains a special file `./profile/README.md` that will appear on the organizations profile.
 
+## Contributing
+
+To contribute to this repository, please see the [contribution guidelines](CONTRIBUTING.md).
+
 <!-- reference urls -->
 
+[developer-workstation-config-docs]: https://plantemoran-appdev.github.io/github-process-docs/workstation-setup/workstation-config/
 [gh-action--backup-repo]: https://github.com/plantemoran-ai-engineering/.github/actions/workflows/backup-repo.yml
 [gh-action-cvs]: https://github.com/plantemoran-ai-engineering/.github/actions/workflows/code-analysis.yml
 [gh-action-lint]: https://github.com/plantemoran-ai-engineering/.github/actions/workflows/linting.yml
