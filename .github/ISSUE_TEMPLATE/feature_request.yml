@@ -1,7 +1,7 @@
 name: '🚀 Feature request'
 description: Suggest a new feature / enhancement for this project
 labels: ['enhancement', 'needs triage :exclamation:']
-title: '[Feature]: <enter title here>'
+title: '<enter title here>'
 body:
   - type: textarea
     attributes:
