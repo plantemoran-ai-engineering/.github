@@ -26,7 +26,7 @@ Ensure you have the following tools installed before getting started.
 
 ## Scripts
 
-This repository has a set of scripts which apply to all packages.
+The following scripts are available in this repository:
 
 - `format:check`: run prettier and check if files are properly formatted
   - e.g. `npm run format:check`
