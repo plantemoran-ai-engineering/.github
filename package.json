@@ -20,7 +20,6 @@
     "format": "prettier . --write --log-level log",
     "format:check": "prettier . --check",
     "lint": "markdownlint **/*.md",
-    "lint:md": "markdownlint **/*.md"
   },
   "devDependencies": {
     "markdownlint-cli": "^0.42.0",
