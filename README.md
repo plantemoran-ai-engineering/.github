@@ -1,6 +1,5 @@
 # Default (root) GitHub project
 
-[![HCL AppScan - SAST Scan][img--gh-action-badge--appscan-sast]][gh-action--appscan-sast]
 [![Linting][img--gh-action-badge--lint]][gh-action--lint]
 
 GitHub supports a repository (named `.github`) with files that are inherited by all other projects.
@@ -64,8 +63,6 @@ To contribute to this repository, please see the [contribution guidelines](CONTR
 <!-- reference urls -->
 
 [developer-workstation-config-docs]: https://plantemoran-appdev.github.io/github-process-docs/workstation-setup/workstation-config/
-[gh-action--appscan-sast]: https://github.com/plantemoran-ai-engineering/.github/actions/workflows/hcl-appscan-sast-scan.yml
 [gh-action--lint]: https://github.com/plantemoran-ai-engineering/.github/actions/workflows/linting.yml
 [gh-creating-default-comm-health-file]: https://help.github.com/en/github/building-a-strong-community/creating-a-default-community-health-file
-[img--gh-action-badge--appscan-sast]: https://github.com/plantemoran-ai-engineering/.github/actions/workflows/hcl-appscan-sast-scan.yml/badge.svg
 [img--gh-action-badge--lint]: https://github.com/plantemoran-ai-engineering/.github/actions/workflows/linting.yml/badge.svg
