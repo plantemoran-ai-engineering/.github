@@ -1,0 +1,43 @@
+name: '📦 Epic'
+description: A large body of work that can be broken down into features, user stories, and tasks
+type: Epic
+labels: ['needs triage :exclamation:']
+title: '**enter the title of your epic here**'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thanks for creating an epic!**
+        Please fill out the fields below to define the scope and goals.
+        Add individual features, user stories, and tasks as sub-issues.
+
+  - type: textarea
+    attributes:
+      label: Description
+      description: Detailed scope and context of the epic.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Success Criteria
+      description: Measurable outcomes that define "done" for this epic.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Dependencies
+      description: Other epics, teams, systems, or external factors this depends on.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Screenshots, mockups, links, or any other supporting information.
+    validations:
+      required: false

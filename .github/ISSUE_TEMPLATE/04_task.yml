@@ -1,0 +1,67 @@
+name: '✅ Task'
+description: Create a task to track specific work items
+type: Task
+labels: ['needs triage :exclamation:']
+title: '**enter the title of your task here**'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thanks for creating a task!**
+        Please fill out the fields below to clearly define the work that needs to be done.
+
+  - type: textarea
+    attributes:
+      label: Task Description
+      description: A clear and concise description of what needs to be done.
+      placeholder: 'e.g. Update the authentication middleware to...'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Context / Background
+      description: Explain why this task is needed and any relevant background information.
+      placeholder: This task is needed because...
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        A clear checklist of what defines this task as complete.
+        Be specific about what should be verified.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Technical Details / Approach
+      description: |
+        Any specific technical considerations, approach, or implementation details.
+        Include file paths, functions, or components that need to be modified.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Dependencies
+      description: |
+        List any dependencies, related issues, or tasks that need to be completed first.
+        Reference other issues using #issue-number.
+      placeholder: |
+        - Depends on #123
+        - Related to #456
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Screenshots, mockups, links, or any other supporting information.
+    validations:
+      required: false
