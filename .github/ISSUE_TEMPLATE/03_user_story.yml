@@ -1,0 +1,53 @@
+name: '📖 User Story'
+description: A user-focused story describing a feature or capability
+type: User Story
+labels: ['needs triage :exclamation:']
+title: '**enter the title of your user story here**'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thanks for creating a user story!**
+        Please use the "As a <persona>, I want <capability>, so that <benefit/value>" format below to clearly describe the desired functionality.
+
+  - type: textarea
+    attributes:
+      label: User Story
+      description: Describe the story using the standard format.
+      placeholder: |
+        As a <persona>,
+        I want <capability>,
+        so that <benefit/value>.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Acceptance Criteria
+      description: Testable conditions that must be met for this story to be considered done.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Design / UI References
+      description: Links to mockups, wireframes, or design specs.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Technical Notes
+      description: Implementation considerations, constraints, or relevant technical details.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Screenshots, mockups, links, or any other supporting information.
+    validations:
+      required: false
